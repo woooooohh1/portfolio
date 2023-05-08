@@ -1,0 +1,232 @@
+@charset "utf-8";
+#m_section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+#m_section h2{
+  /* font-family: 'omyu_pretty'; */
+  font-weight: 100;
+  position: relative;
+  font-size: 4rem;
+  margin-top: 340px;
+  color: #222;
+}
+#m_section h2::before{
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: text 3s linear;
+  filter:drop-shadow(0 0 20px #fff) drop-shadow(0 0 40px #fff);;
+}
+@keyframes text{
+
+  0%,10%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
+#m_section p{
+  position: absolute;
+  font-family: 'omyu_pretty';
+  font-size: 2.25rem;
+  margin-top: 480px;
+  text-align: center;
+}
+.txt01, .txt02, .txt03{
+  font-size: 3rem;
+}
+.txt01{
+  color: #F29D14;
+  filter: drop-shadow(2px 2px 20px #F29d14)drop-shadow(0px 0px 40px #F29d14);
+}
+.txt02{
+  color: #00E0FF;
+  filter: drop-shadow(2px 2px 20px #00E0FF)drop-shadow(0px 0px 40px #00E0FF);
+}
+.txt03{
+  color: #E900FF;
+  filter: drop-shadow(2px 2px 20px #E900FF)drop-shadow(0px 0px 40px #E900FF);
+}
+/* 배경요소 */
+.box_wrap{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 488px;
+  height: 488px;
+}
+.box01{
+  width: 72%;
+  height: 72%;
+  border-radius: 50%;
+}
+.box02{
+  width: 86%;
+  height: 86%;
+  border-radius: 50%;
+}
+.box03{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.box03::after,.box03::before{
+  content: "";
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  border: 1px solid #F29D14;
+  position: absolute;
+  box-sizing: border-box;
+  animation: xaves 2s linear infinite;
+}
+.box03::after{
+  animation-delay: 1s;
+}
+@keyframes xaves{
+  to{
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.dash,.solid{
+  position: absolute;
+}
+.d_wrap{
+  right: -100px; bottom: -200px;
+}
+.s_wrap{top: 50%; transform: translateY(-40%); left: -300px;}
+.dash01{border: 1px dashed #E900FF;}
+.dash02{border: 1px dashed #00E0FF;}
+.dash03{border: 1px dashed #F29d14;}
+
+.solid01{border: 1px solid #E900FF;}
+.solid02{border: 1px solid #00E0FF;}
+.solid03{border: 1px solid #F29d14;}
+@keyframes circle{
+  0%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+.middle{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouse{
+  width: 40px;
+  height: 64px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+.mouse::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+@keyframes mouse {
+  from{
+    opacity: 1;
+    top: 20px;
+  }
+  to{
+    opacity: 0;
+    top: 35px;
+  }
+}
+/* 내정보 section info */
+#info{background: #fff; color: #000; font-family: 'omyu_pretty';}
+#info h2{display: none;}
+#info .info_wrap{
+  width: 1024px;
+  margin: 0 auto;
+  padding: 80px 0px;
+  display: flex;
+  justify-content: center;
+}
+.info_wrap .info_list{
+  text-align: center;
+  margin-right: 120px;
+}
+.info_wrap .info_list li img{width: 240px;}
+.info_list li:nth-child(2){
+  font-size: 36px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+.info_list li:nth-child(2) span{font-size: 20px;}
+.info_list li:last-child{font-size: 24px;}
+.info_wrap article h3{
+  padding: 40px 0px;
+  font-size: 32px;
+}
+.info_wrap article dl dt{
+  font-size: 24px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #000;
+}
+.info_wrap article dl dd{
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+#info .skill_wrap{
+  display: flex;
+  justify-content: center;
+  width: 1024px;
+  height: 500px;
+  margin: 0px auto;
+}
+#info .skill_wrap h3{
+  display: none;
+}
+#info .skill_wrap .skill01{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#info .skill_wrap .skill01 li:first-child{
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  background: #fff;
+  z-index: 3;
+  transition: transform 1.25s;
+}
+#info .skill_wrap .skill01 li:not(:first-child){
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+  transform-origin: 140px;
+  transform: rotate(0deg) translateX(110px);
+}
+#info .skill_wrap .skill01 li img{
+  width: 56px;
+}
+.skill01 li:not(:first-child){
+
+}

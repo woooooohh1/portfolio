@@ -192,11 +192,12 @@
   font-size: 20px;
   margin-bottom: 12px;
 }
+
 #info .skill_wrap{
   display: flex;
   justify-content: center;
   width: 1024px;
-  height: 500px;
+  /* height: 500px; */
   margin: 0px auto;
 }
 #info .skill_wrap h3{
@@ -204,29 +205,58 @@
 }
 #info .skill_wrap .skill01{
   position: relative;
-  width: 50%;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  animation: onewave 2s linear;
 }
-#info .skill_wrap .skill01 li:first-child{
-  position: absolute;
-  width: 56px;
-  height: 56px;
+#info .skill_wrap .skill01 div{
+  position: relative;
+  width: 80px;
+  height: 80px;
   text-align: center;
+  border: 1px solid #000;
   background: #fff;
   z-index: 3;
-  transition: transform 1.25s;
+  border-radius: 50%;
+  /* box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25); */
+  transition: transform 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#info .skill_wrap .skill01 li:not(:first-child){
+@keyframes onewave{
+  form{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes size{
+  form{
+    scale: 0;
+  }
+  to{
+    scale: 1;
+  }
+}
+#info .skill_wrap .skill01 li{
   position: absolute;
   left: 0px;
   transition: 0.5s;
   transform-origin: 140px;
-  transform: rotate(0deg) translateX(110px);
+  transform: rotate(clac(360deg/6 * var(--i)));
+  /* scale: 0; */
 }
-#info .skill_wrap .skill01 li img{
+#info .skill_wrap .skill01 img{
   width: 56px;
 }
-.skill01 li:not(:first-child){
-
+.skill01 li img{
+  position: relative;
+  transform: rotate(calc(360deg/-8 * var(--i)));
+  animation: size 2s linear;
 }

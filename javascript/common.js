@@ -31,3 +31,14 @@ list.forEach(link=>{
     link.append(span);
   })
 })
+
+//포트폴리오 버튼
+document.getElementById('next').onclick = function(){
+  let lists = document.querySelectorAll('#slide li');
+  document.getElementById('slide').appendChild(lists[0]);
+}
+
+document.getElementById('prev').onclick = function(){
+  let lists = document.querySelectorAll('#slide li');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
+}

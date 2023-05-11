@@ -260,3 +260,87 @@
   transform: rotate(calc(360deg/-8 * var(--i)));
   animation: size 2s linear;
 }
+/* 포트폴리오 */
+#portfolio{
+  width: 100%;
+  background: #000;
+}
+#portfolio h2{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 100px;
+}
+.container{
+  width: 1024px;
+  margin: 0px auto;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+.container h3{display: none;}
+.container #slide{
+  margin: 50px auto;
+  width: max-content;
+  display: flex;
+  position: relative;
+}
+.container #slide li:first-child{
+  width: 800px;
+  height: 533.33px;
+  transition: 0.3s;
+}
+.container #slide li:not(:first-child){
+  width: 150px;
+  /* height: 133.33px; */
+  position: absolute;
+  bottom: 40px;
+  left: 580px;
+  transition: 0.3s;
+}
+.container #slide li:nth-child(3){
+  left: 740px;
+}
+.container #slide li:last-child{
+  left: 900px;
+}
+.container #slide li div{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container #slide li div img{
+  width: 100%;
+}
+.container #slide li:first-child a{
+  display: inline-block;
+  color: #fff;
+  padding: 16px 24px;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  margin: 24px 4px;
+}
+.container #slide li a:hover{
+  background: #fff;
+  color: #000;
+}
+.container #slide li:not(:first-child) a{
+  display: none;
+}
+.container #prev, #next{
+  position: absolute;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container >div img{
+  width: 40px;
+}
+#prev{
+  left: 70px;
+}
+#next{
+  right: 70px;
+}

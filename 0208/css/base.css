@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+  --f-color01:#333;
+  --f-color02:#fff;
+  --f-color03:#393029; /* 소개글 소제목 */
+  --f-color04:#432C10; /* 큰제목 */
+  --f-color05:#F1E3C4; /* 신라호텔 색상 */
+  --m-auto:0px auto; 
+}
+body{
+  font-family: "Noto Sans KR","Noto Sans","맑은고딕";
+  color: var(--f-color01);
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color: var(--f-color01);
+}

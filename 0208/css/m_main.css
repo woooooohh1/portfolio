@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*메인서식*/
+
+main {
+  /* overflow-x: hidden; */
+}
+#visual_slide {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#visual_slide > h2 {
+  display: none;
+}
+#visual_slide div {
+  position: relative;
+  /* width: 100%; */
+  /* text-align: center; */
+}
+@keyframes ani {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#visual_slide div:not(:first-of-type) {
+  display: none;
+}
+
+#visual_slide .h01 {
+  position: absolute;
+  z-index: 10;
+  top: 320px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  /* width: 698px; height: 218px; */
+  line-height: 58px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
+}
+#visual_slide div img {
+  position: absolute;
+  width: 100%; height: 100vh;
+  /* transform: scale(4); */
+  animation-name: ani; /* 애니메이션 이름 지정 */
+  animation-duration: 4s; /* 애니메이션 전체시간 */
+  animation-iteration-count: calc(1); /* 애니메이션 반복회수 */
+  transition: 0.3s;
+}
+#visual_slide .h02 {
+  font-size: 40px;
+}

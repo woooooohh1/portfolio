@@ -76,10 +76,10 @@ add(introAnimation()).
 add(fadeInElements('.header__logo, .header__nav a')).
 add(skewInElements('h1, .hero__col--2 img'), '-=1');
 
-/*GSDevTools.create({
+GSDevTools.create({
     animation: master,
     id: 'introEnd',
     css: {
         zIndex: 10
     }
-});*/
+});

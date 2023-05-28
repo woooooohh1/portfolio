@@ -33,14 +33,14 @@ list.forEach(link=>{
 })
 
 //포트폴리오 버튼
-document.getElementById('next').onclick = ()=>{
-  let lists = document.querySelectorAll('#slide li');
-  document.getElementById('slide').appendChild(lists[0]);
-  return false;
-}
+// document.getElementById('next').onclick = ()=>{
+//   let lists = document.querySelectorAll('#slide li');
+//   document.getElementById('slide').appendChild(lists[0]);
+//   return false;
+// }
 
-document.getElementById('prev').onclick = function(){
-  let lists = document.querySelectorAll('#slide li');
-  document.getElementById('slide').prepend(lists[lists.length - 1]);
-  return false;
-}
+// document.getElementById('prev').onclick = function(){
+//   let lists = document.querySelectorAll('#slide li');
+//   document.getElementById('slide').prepend(lists[lists.length - 1]);
+//   return false;
+// }

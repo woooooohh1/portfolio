@@ -7,7 +7,7 @@ header{
   display:  flex;
   position: fixed;
   top: 0px; left: 0px;
-  z-index: 4;
+  z-index: 5;
 }
 header h1 img{
   width: 150px;
@@ -24,7 +24,7 @@ header nav a{
   position: absolute;
   right: 1%;
   top: 35px;
-  z-index: 5;
+  z-index: 100;
   width: 70px;
   height: 70px;
   border: 1px dashed #fff;
@@ -88,7 +88,7 @@ header nav a{
   height: 100vh;
   /* background: #000; */
   transition: 0.3s;
-  z-index: 1;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;

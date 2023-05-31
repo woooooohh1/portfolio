@@ -94,6 +94,15 @@ header nav a{
   align-items: center;
   font-family: 'Montserrat', sans-serif;
 }
+.about_img{
+  background-image: url('../images/about_bg.jpg') !important;
+}
+.port_img{
+  background-image: url('../images/nav_bg.jpg') !important;
+}
+.con_img{
+  background-image: url('../images/contact_bg.jpg') !important;
+}
 .gnb .list{
   position: relative;
   display: flex;

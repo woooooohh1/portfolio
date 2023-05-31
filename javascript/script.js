@@ -105,13 +105,13 @@ list.forEach(link=>{
 //gnb 백그라운드 요소 변경
 let gnb = document.querySelector('.gnb');
 list[0].addEventListener('mouseenter',()=>{
-  gnb.style.backgroundImage="url(../images/about_bg.jpg)"
+  gnb.style.backgroundImage="url(../portfolio/images/about_bg.jpg)"
 });
 list[1].addEventListener('mouseenter',()=>{
-  gnb.style.backgroundImage="url(../images/nav_bg.jpg)"
+  gnb.style.backgroundImage="url(../portfolio/images/nav_bg.jpg)"
 });
 list[2].addEventListener('mouseenter',()=>{
-  gnb.style.backgroundImage="url(../images/contact_bg.jpg)"
+  gnb.style.backgroundImage="url(../portfolio/images/contact_bg.jpg)"
 });
 
 

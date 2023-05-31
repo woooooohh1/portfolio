@@ -14,7 +14,7 @@ body{
 .slide{
   --items: 5;
   --width: 400px;
-  --height: clamp(200px, 40vw, 700px);
+  --height: 700px;
   --x: calc(var(--active) * 240%);
   --y: calc(var(--active) * 100%);
   --rot: calc(var(--active) * 80deg);

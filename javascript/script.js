@@ -105,12 +105,15 @@ list.forEach(link=>{
 //gnb 백그라운드 요소 변경
 let gnb = document.querySelector('.gnb');
 list[0].addEventListener('mouseenter',()=>{
+  gnb.classList.remove('port_img','con_img');
   gnb.classList.add('about_img');
 });
 list[1].addEventListener('mouseenter',()=>{
+  gnb.classList.remove('about_img','con_img');
   gnb.classList.add('port_img');
 });
 list[2].addEventListener('mouseenter',()=>{
+  gnb.classList.remove('port_img','about_img');
   gnb.classList.add('con_img');
 });
 

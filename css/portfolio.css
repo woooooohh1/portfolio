@@ -6,6 +6,8 @@ body{
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 .slide{
   --items: 5;
@@ -56,7 +58,7 @@ body{
   height: 100%;
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5)); */
 }
-/* .slide .title {
+.slide a {
   position: absolute;
   z-index: 1;
   color: #fff;
@@ -65,8 +67,8 @@ body{
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   font-size: clamp(20px, 3vw, 30px);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
-.carousel-item .num {
+} 
+/* .carousel-item .num {
   position: absolute;
   z-index: 1;
   color: #fff;
@@ -74,7 +76,7 @@ body{
   left: 20px;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   font-size: clamp(20px, 10vw, 80px);
-} */
+}  */
 .slide img {
   width: 100%;
   /* height: 100%; */

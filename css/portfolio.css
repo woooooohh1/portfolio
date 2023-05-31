@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 body{
   overflow-y: hidden;
 }
@@ -8,6 +9,7 @@ body{
   overflow: hidden;
   position: relative;
   z-index: 2;
+  font-family: 'Montserrat', sans-serif;
 }
 .slide{
   --items: 5;
@@ -46,7 +48,6 @@ body{
   height: 100%;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   opacity: var(--opacity);
-  font-family: "Orelo-sw-db", serif;
 }
 .slide .slide_box:before {
   content: "";
@@ -56,18 +57,25 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5)); */
 }
 .slide a {
   position: absolute;
   z-index: 9;
   color: #fff;
-  bottom: -50px;
+  bottom: -60px;
   left: 20px;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-  font-size: clamp(20px, 3vw, 30px);
+  font-size: 24px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-} 
+  border-radius: 8px;
+  border: 1px solid #fff;
+  padding: 8px;
+  transition: 0.3s;
+}
+.slide a:hover{
+  background: #fff;
+  color: #000;
+}
 /* .carousel-item .num {
   position: absolute;
   z-index: 1;

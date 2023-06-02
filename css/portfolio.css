@@ -8,8 +8,18 @@ body{
   height: 100vh;
   overflow: hidden;
   position: relative;
+  left: 0; top: 0;
   z-index: 2;
   font-family: 'Montserrat', sans-serif;
+}
+#portfolio h2{
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 .slide{
   --items: 5;

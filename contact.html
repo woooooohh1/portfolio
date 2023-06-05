@@ -65,26 +65,59 @@
       <fieldset>
         <legend><span>E-mail</span> 보내기</legend>
         <p>관심 있으신 분들은 언제든지 연락주세요.</p>
-        <label for="division">소속</label>
-        <input type="text" name="division" id="division">
-        <label for="name">이름</label>
-        <input type="text" name="name" id="name">
-        <label for="email">이메일</label>
-        <input type="email" name="email" id="email">@<input type="email" name="email2" id="email2">
-        <select name="address" id="address">
-          <option value="">직접입력</option>
-          <option value="naver.com">naver.com</option>
-          <option value="gmail.com">gmail.com</option>
-          <option value="daum.net">daum.net</option>
-        </select>
-        <label for="phone">연락처</label>
-        <input type="tel" name="phone" id="phone">
-        <label for="des">문의내용</label>
-        <textarea name="des" id="des" cols="30" rows="10"></textarea>
-        <button type="submit">보내기</button>
+        <div>
+          <label for="division"><span>소속</span>
+            <input type="text" name="division" id="division">
+          </label>
+          <label for="name"><span>이름</span>
+            <input type="text" name="name" id="name">
+          </label>
+          <label for="email" class="email"><span>이메일</span>
+            <input type="text" name="email" id="email">@<input type="text" name="email2" id="email2">
+            <select name="address" id="address">
+              <option value="">직접입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="daum.net">daum.net</option>
+            </select>
+          </label>
+          <label for="phone"><span>연락처</span>
+            <input type="tel" name="phone" id="phone">
+          </label>
+          <label for="des" class="des"><span>문의 내용</span>
+            <textarea name="des" id="des" cols="30" rows="10"></textarea>
+          </label>
+          <button type="submit" id="btn">보내기</button>
+        </div>
       </fieldset>
     </form>
   </section>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click',()=>{
+      emailjs.init('dngus1703@naver.com');
+      let templateParams  = {
+          divison : document.getElementById('division').value,
+          name : document.getElementById('name').value,
+          phone : document.getElementById('phone').value,
+          email : document.getElementById('email').value,
+          email2 : document.getElementById('email2').value,
+          des : document.getElementById('des').value,
+      }
+      emailjs.send('service_kctyv5i', 'template_6tljm48', templateParams).then(function(response){
+            console.log('Success!', response.status, response.text);
+            setStatus('success');
+        }, function(error){
+            console.log('Failed...', error);
+            setStatus('fail');
+        })
+
+    });
+
+  </script>
   <script src="./javascript/script.js"></script>
 </body>
 </html>

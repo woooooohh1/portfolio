@@ -103,11 +103,12 @@
       let templateParams  = {
           divison : document.getElementById('division').value,
           name : document.getElementById('name').value,
-          phone : document.getElementById('phone').value,
           email : document.getElementById('email').value,
           email2 : document.getElementById('email2').value,
+          phone : document.getElementById('phone').value,
           des : document.getElementById('des').value,
       }
+      
       emailjs.send('service_kctyv5i', 'template_6tljm48', templateParams).then(function(response){
             console.log('Success!', response.status, response.text);
             setStatus('success');

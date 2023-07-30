@@ -1,0 +1,139 @@
+@charset "utf-8";
+.intro{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  background: #000000;
+}
+.intro marquee{
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px;
+}
+.intro_text{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+}
+.intro_text span{
+  font-size: 36px;
+  font-weight: 400;
+}
+.intro_text span .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.start_main{
+  width: 100%;
+  /* position: relative;
+  z-index: 1; */
+}
+.start_main header{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+}
+.start_main header img{
+  padding: 20px;
+  width: 100px;
+}
+.start_main #myinfo{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/mainbg.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  /* background-size: cover; */
+  background-size: 100vh;
+  overflow: hidden;
+  animation: backimg 4s cubic-bezier(0.19, 1,0.22,1);
+  animation-delay: 6.5s;
+}
+#myinfo .flex{
+  font-size: 128px;
+  display: flex;
+}
+#myinfo h2{
+  padding-top: 30vh;
+  margin-left: 7.5%;
+  margin-right: 16px;
+}
+#myinfo .flex > div{
+  margin-top: 32vh;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 20px solid #fff;
+  transform: translateY(-2px);
+  border-radius: 50%;
+  animation: circle 2s linear;
+  animation-delay: 8s;
+  animation-fill-mode: both;
+  font-size: 40px;
+  line-height: 60px;
+  padding-left: 50px;
+}
+#myinfo .flex > div >span{
+  position: absolute;
+  opacity: 0;
+}
+@keyframes backimg{
+  from{
+    background-size: 110vh;
+  }
+  to{
+    background-size: 100vh;
+  }
+}
+@keyframes circle{
+  from{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  to{
+    width: 450px;
+    height: 100px;
+    border-radius: 50px;
+  }
+}
+#myinfo ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+#myinfo ul li{
+  font-size: 24px;
+  font-weight: 100;
+}
+#myinfo ul li:first-child{
+  margin-right: 80px !important;
+}
+#myinfo ul li:not(:last-child){
+  margin-right: 40px;
+}
+#myinfo ul li:first-child span{
+  width: 260px;
+  font-size: 32px;
+  display: block;
+  text-align: center;
+}
+#myifo ul li span:last-of-type{
+  /* padding-top: 16px; */
+  display: inline-block !important;
+  height: 100px;
+  transform: translateY(16px);
+  /* padding-bottom: 16px; */
+}
+#myinfo ul li span{
+  display: block;
+  width: 200px;
+  height: 1px;
+  background: #fff;
+  font-size: 16px;
+}

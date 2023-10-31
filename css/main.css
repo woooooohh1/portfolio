@@ -152,6 +152,9 @@
   font-size: 24px;
   font-weight: 100;
 }
+#myinfo ul li a{
+  color: #fff;
+}
 #myinfo ul li:first-child{
   margin-right: 80px !important;
   text-align: center;

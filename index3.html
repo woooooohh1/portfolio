@@ -6,9 +6,7 @@
   <title>정우현 포트폴리오</title>
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/base.css" type="text/css">
-  <link rel="stylesheet" href="./css/index3.css" type="text/css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
 </head>
 <body>
   <div class="intro">
@@ -16,14 +14,15 @@
     <marquee behavior="" direction="left" scrollamount="10">1998.01.04 _ 26years</marquee>
     <marquee behavior="" direction="right" scrollamount="10">Grind Hard , Shine Hard</marquee>
     <marquee behavior="" direction="left" scrollamount="10">Woohyeon who constantly grows and strives</marquee>
+    <!-- <p>맥북 17인치에 최적화 되어 있습니다.</p> -->
     <div class="intro_text">
-      <span>Woo_hyeon Front end Developer</span>
+      <span>Woo_hyeon Frontend Developer</span>
     </div>
   </div>
   <div class="start_main">
     <header>
       <h1 class="logo">
-        <a href="./index3.html" title="메인페이지로 바로가기">
+        <a href="#myinfo" title="메인페이지로 바로가기">
           <img src="./images/logo.png" alt="로고">
         </a>
       </h1>
@@ -32,21 +31,127 @@
       <div class="flex">
         <h2>WO</h2>
         <div>
-          <span>hardworking</span>
-          <span>potential</span>
-          <span>humble</span>
-          <span>kind</span>
+          <span class="word word1">hardworking</span>
+          <span class="word word2">potential</span>
+          <span class="word word3">humble</span>
+          <span class="word word4">kind</span>
         </div>
       </div>
       <ul>
-        <li>Front-end Developer<span>&nbsp;</span> <span>Woo-hyeon</span></li>
-        <li>Main<span>&nbsp;</span><span>나를 간략하게 요약한 페이지</span></li>
-        <li>About<span>&nbsp;</span><span>dasddas</span></li>
-        <li>Portfolio<span>&nbsp;</span><span>내가 했던 공부</span></li>
-        <li>Contact<span>&nbsp;</span><span>연락처, 이메일</span></li>
+        <li>Front-end Developer<span>Woo-hyeon</span></li>
+        <li>
+          <a href="#myinfo" title="메인페이지 바로가기">Main<span>나의 소개</span></a>
+        </li>
+        <li>
+          <a href="./contact.html" title="경력사항페이지 바로가기">Career<span>경력 사항</span></a>
+        </li>
+        <li>
+          <a href="./portfolio.html">Portfolio<span>내가 했던 프로젝트</span></a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact<span>연락처, 이메일</span></a>
+        </li>
+      </ul>
+      <div class="middle">
+        <div class="mouse">
+          &nbsp;
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <article>
+        <div class="left_box1">
+          <img src="./images/myabout.jpg" alt="내사진">
+          <ul>
+            <li><img src="./images/mdi_heart-outline.png" alt="좋아요아이콘" id="myImage"></li>
+            <li><img src="./images/message.png" alt="댓글아이콘"></li>
+            <li><img src="./images/share.png" alt="공유아이콘"></li>
+            <li><img src="./images/save.png" alt="북마크 아이콘"></li>
+          </ul>
+          <p>woooooo_hh</p>
+          <p>마음을 건드리는 디지털아날로그 감성 '멘도 전시회'</p>
+        </div>
+        <div class="right_box1">
+          <h2>안녕하세요.<br><span>' 프론트엔드개발자 '</span>가 되고 싶은 정우현입니다.</h2>
+          <p>저는 창의적인 아이디어를 시각적으로 현실화하고 UX를 고려하여 웹사이트를<br>개선하는것에 흥미를 느꼈습니다.</p>
+          <p>프론트엔드개발자는 창의성을 발휘하면서 동시에 사용자와 소통을 통해<br>기술과 디자인을 융합시킬수 있다는 점이 매력적으로 다가왔습니다.</p>
+          <p>끊임없이 도전하고 성취하는 프론트엔드개발자가 되겠습니다.</p>
+          <h3>교육 및 경력사항</h3>
+          <dl>
+            <dt>20.02~22.08</dt>
+            <dd>강원대학교 화학공학과 졸업</dd>
+            <dt>22.11~23.05</dt>
+            <dd>그린컴퓨터학원 웹퍼블리셔&프론트엔드 SW개발자양성</dd>
+            <dt>23.06~23.10</dt>
+            <dd>아방데코 웹디자인 취업</dd>
+          </dl>
+        </div>
+      </article>
+    </section>
+    <section id="skill">
+      <h2>skill</h2>
+      <div class="lp">
+        <div class="left_box2">
+          <div class="image_box">
+            <img src="./images/My.png" alt="내 사진">
+            <span>My skill</span>
+            <img src="./images/figma_lp1.png" alt="figma_lp">
+            <img src="./images/html_lp1.png" alt="html_lp">
+            <img src="./images/css3_lp1.png" alt="csslp">
+            <img src="./images/js_lp1.png" alt="자바lp">
+          </div>
+          <img src="./images/lp_stick.png" alt="lp바">
+          <div class="on lp_btn">
+            <span>on</span>
+          </div>
+          <div class="off lp_btn">
+            <span>off</span>
+          </div>
+        </div>
+        <div class="right_box2">
+          <div id="app">
+            <input type="checkbox" id="toggle" name="toggle" />
+            
+            <div class="background">
+              <div class="bg-content">
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+              </div>
+              <div class="bg-description">
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+              </div>
+            </div>
+            
+            <div class="content white">
+              <img src="./images/my1.png" alt="내사진" class="avatar">
+              <p class="pronunciation">Me</p>
+              <label class="button" for="toggle">
+                <img src="./images/mingcute_down-fill.png" alt="아래화살표">
+              </label>
+            </div>
+            <div class="description white">
+              <p>저는 "<span>LP플레이어</span>" 같은 사람입니다.</p>
+              <p>LP플레이어는 오래된 음악을<br>현재와 연결시켜주는데<br>저도 mz세대와 기성세대의 차이를<br>존중하며 중간에서 조화를<br>이루는 능력이 있습니다.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li><img src="./images/my_lp.png" alt="my lp">My_Lp</li>
+        <li><img src="./images/lp_figma.png" alt="figma lp">Figma_LP</li>
+        <li><img src="./images/lp_html.png" alt="">HTML5_LP</li>
+        <li><img src="./images/lp_css.png" alt="">CSS3_LP</li>
+        <li><img src="./images/lp_js.png" alt="">JS_LP</li>
       </ul>
     </section>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="./javascript/intro.js"></script>
+  <script src="./javascript/main.js"></script>
 </body>
 </html>
